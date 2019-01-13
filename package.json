@@ -1,0 +1,12 @@
+{
+  "name": "writing-clean-js-tests",
+  "version": "1.0.0",
+  "description": "Code samples for my talk, Writing Clean JavaScript Tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": "https://github.com/bobderrico80/writing-clean-js-tests",
+  "author": "bobderrico80@gmail.com",
+  "license": "ISC"
+}
