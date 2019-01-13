@@ -57,15 +57,20 @@ describe('The PersonManager() class', () => {
   });
 
   it('getNames() method returns the names of all persons being managed', () => {
-    expect(personManager.getNames()).toEqual(['Bob', 'Meg', 'Maddie', 'Ellie']);
+    expect(personManager.getNames()).toEqual([
+      personManager.persons[0].name,
+      personManager.persons[1].name,
+      personManager.persons[2].name,
+      personManager.persons[3].name,
+    ]);
   });
 
   it('getOccupations() method returns occupations of all persons being managed', () => {
     expect(personManager.getOccupations()).toEqual([
-      'software engineer',
-      'teacher',
-      'student',
-      'student',
+      personManager.persons[0].occupation,
+      personManager.persons[1].occupation,
+      personManager.persons[2].occupation,
+      personManager.persons[3].occupation,
     ]);
   });
 

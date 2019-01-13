@@ -1,4 +1,4 @@
-const Person = require('../src/2-4-Person');
+const Person = require('../src/Person-v2');
 
 describe('The Person class', () => {
   let person;

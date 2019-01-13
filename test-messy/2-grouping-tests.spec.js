@@ -1,4 +1,4 @@
-const Person = require('../src/2-4-Person');
+const Person = require('../src/Person-v2');
 
 // Messy way 1 - more than one assertion per test
 describe('Person (very messy)', () => {

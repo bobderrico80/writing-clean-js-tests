@@ -1,3 +1,5 @@
+// Note that this is the same as 4-abstract-setup-steps.spec.js
+
 const PersonManager = require('../src/PersonManager');
 const Person = require('../src/Person-v2');
 

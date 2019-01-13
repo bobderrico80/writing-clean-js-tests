@@ -1,5 +1,5 @@
-const PersonManager = require('../src/4-PersonManager');
-const Person = require('../src/2-4-Person');
+const PersonManager = require('../src/PersonManager');
+const Person = require('../src/Person-v2');
 
 describe('The PersonManager() class', () => {
   let personManager;

@@ -1,4 +1,4 @@
-const Person = require('../src/1-Person');
+const Person = require('../src/Person');
 
 describe('The Person class', () => {
   it("sayName() method returns expected message with the person's name", () => {
