@@ -4,7 +4,7 @@ describe('The Person class', () => {
   let person;
 
   beforeEach(() => {
-    person = new Person('Bob', 38, 'Elsevier', 'tortellini');
+    person = new Person('Bob', 38, 'software engineer', 'tortellini');
   });
 
   it("sayName() method returns expected message with the person's name", () => {
@@ -15,8 +15,8 @@ describe('The Person class', () => {
     expect(person.sayAge()).toEqual('I am 38 years old');
   });
 
-  it("goToWork() method returns expected message with the person's workplace", () => {
-    expect(person.goToWork()).toEqual('I am heading to work at Elsevier');
+  it("goToWork() method returns expected message with the person's occupation", () => {
+    expect(person.goToWork()).toEqual('I am heading to work as a software engineer');
   });
 
   it("eatFavoriteFood() returns expected message with the person's favorite food", () => {

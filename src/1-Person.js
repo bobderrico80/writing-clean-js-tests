@@ -1,8 +1,8 @@
 class Person {
-  constructor(name, age, workplace, favoriteFood) {
+  constructor(name, age, occupation, favoriteFood) {
     this.name = name;
     this.age = age;
-    this.workplace = workplace;
+    this.occupation = occupation;
     this.favoriteFood = favoriteFood;
   }
 
@@ -15,7 +15,7 @@ class Person {
   }
 
   goToWork() {
-    return `I am heading to work at ${this.workplace}`;
+    return `I am heading to work as a ${this.occupation}`;
   }
 
   eatFavoriteFood() {

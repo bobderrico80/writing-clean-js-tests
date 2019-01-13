@@ -1,11 +1,11 @@
-const Person = require('../src/2-3-Person');
+const Person = require('../src/2-4-Person');
 
 // Messy way 1 - more than one assertion per test
 describe('Person (very messy)', () => {
   let person;
 
   beforeEach(() => {
-    person = new Person('Bob', 38, 'Elsevier', 'tortellini');
+    person = new Person('Bob', 38, 'software engineer', 'tortellini');
   });
 
   it('atWork is false', () => {
@@ -20,13 +20,13 @@ describe('Person (very messy)', () => {
     expect(person.sayAge()).toEqual('I am 38 years old');
   });
 
-  it("says person's workplace and sets atWork to true", () => {
-    expect(person.goToWork()).toEqual('I am heading to work at Elsevier');
+  it("says person's occupation and sets atWork to true", () => {
+    expect(person.goToWork()).toEqual('I am heading to work as a software engineer');
     expect(person.atWork).toEqual(true);
   });
 
   it('already at work message', () => {
-    expect(person.goToWork()).toEqual('I am heading to work at Elsevier');
+    expect(person.goToWork()).toEqual('I am heading to work as a software engineer');
     expect(person.atWork).toEqual(true);
     expect(person.goToWork()).toEqual('I am already at work!');
   });
@@ -41,14 +41,14 @@ describe('Person (very messy)', () => {
   });
 
   it('says go home message and sets atHome to false', () => {
-    expect(person.goToWork()).toEqual('I am heading to work at Elsevier');
+    expect(person.goToWork()).toEqual('I am heading to work as a software engineer');
     expect(person.atWork).toEqual(true);
     expect(person.goHome()).toEqual('I am heading home');
     expect(person.atWork).toEqual(false);
   });
 
   it('says already home message', () => {
-    expect(person.goToWork()).toEqual('I am heading to work at Elsevier');
+    expect(person.goToWork()).toEqual('I am heading to work as a software engineer');
     expect(person.atWork).toEqual(true);
     expect(person.goHome()).toEqual('I am heading home');
     expect(person.atWork).toEqual(false);
@@ -61,7 +61,7 @@ describe('Person (slightly better)', () => {
   let person;
 
   beforeEach(() => {
-    person = new Person('Bob', 38, 'Elsevier', 'tortellini');
+    person = new Person('Bob', 38, 'software engineer', 'tortellini');
   });
 
   it('atWork is false', () => {
@@ -76,8 +76,8 @@ describe('Person (slightly better)', () => {
     expect(person.sayAge()).toEqual('I am 38 years old');
   });
 
-  it("says person's workplace", () => {
-    expect(person.goToWork()).toEqual('I am heading to work at Elsevier');
+  it("says person's occupation", () => {
+    expect(person.goToWork()).toEqual('I am heading to work as a software engineer');
   });
 
   it('atWork is true', () => {

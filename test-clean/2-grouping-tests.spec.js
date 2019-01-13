@@ -1,10 +1,10 @@
-const Person = require('../src/2-3-Person');
+const Person = require('../src/2-4-Person');
 
 describe('Person', () => {
   let person;
 
   beforeEach(() => {
-    person = new Person('Bob', 38, 'Elsevier', 'tortellini');
+    person = new Person('Bob', 38, 'software engineer', 'tortellini');
   });
 
   it('atWork is false', () => {
@@ -30,8 +30,8 @@ describe('Person', () => {
       message = person.goToWork();
     });
 
-    it("says person's workplace", () => {
-      expect(message).toEqual('I am heading to work at Elsevier');
+    it("says person's occupation", () => {
+      expect(message).toEqual('I am heading to work as a software engineer');
     });
 
     it('atWork is true', () => {

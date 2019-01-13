@@ -1,10 +1,10 @@
-const Person = require('../src/2-3-Person');
+const Person = require('../src/2-4-Person');
 
 describe('The Person class', () => {
   let person;
 
   beforeEach(() => {
-    person = new Person('Bob', 38, 'Elsevier', 'tortellini');
+    person = new Person('Bob', 38, 'software engineer', 'tortellini');
   });
 
   // The Person class sets atWork property to false by default
@@ -34,9 +34,9 @@ describe('The Person class', () => {
       message = person.goToWork();
     });
 
-    // The Person class goToWork() method returns expected message with person's workplace
-    it("returns expected message with person's workplace", () => {
-      expect(message).toEqual('I am heading to work at Elsevier');
+    // The Person class goToWork() method returns expected message with person's occupation
+    it("returns expected message with person's occupation", () => {
+      expect(message).toEqual('I am heading to work as a software engineer');
     });
 
     // The Person class goToWork() method sets atWork property to true
