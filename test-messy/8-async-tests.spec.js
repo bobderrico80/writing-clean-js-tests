@@ -1,3 +1,4 @@
+/* eslint-disable */
 const api = require('../src/api');
 
 // Won't pass, `get()` returns a Promise:
@@ -23,7 +24,7 @@ describe.skip('The api module get() function', () => {
 // Seems like it works, everything is passing ¯\_(ツ)_/¯
 describe('The api module get() function', () => {
   it('resolves with fruit collection when no ID url param is passed', () => {
-    api.get('/fruit').then((fruits) => {
+    api.get('/fruit').then(fruits => {
       expect(fruits).toEqual([
         { id: 1, item: 'apple' },
         { id: 2, item: 'banana' },
@@ -33,14 +34,14 @@ describe('The api module get() function', () => {
   });
 
   it('resolves with a single fruit ID url param is passed', () => {
-    api.get('/fruit/2').then((fruits) => {
+    api.get('/fruit/2').then(fruits => {
       // All tests are passing, but this should be failing!
       expect(fruits).toEqual({ id: 2, item: 'apple' });
     });
   });
 
   it('rejects with an error if fruit cannot be found by ID', () => {
-    api.get('/fruit/42').catch((error) => {
+    api.get('/fruit/42').catch(error => {
       expect(error.message).toEqual('404 Not Found');
     });
   });
@@ -49,7 +50,7 @@ describe('The api module get() function', () => {
 // This works, but it's verbose
 describe('The api module get() function', () => {
   it('resolves with fruit collection when no ID url param is passed', () =>
-    api.get('/fruit').then((fruits) => {
+    api.get('/fruit').then(fruits => {
       expect(fruits).toEqual([
         { id: 1, item: 'apple' },
         { id: 2, item: 'banana' },
@@ -58,12 +59,12 @@ describe('The api module get() function', () => {
     }));
 
   it('resolves with a single fruit ID url param is passed', () =>
-    api.get('/fruit/2').then((fruits) => {
+    api.get('/fruit/2').then(fruits => {
       expect(fruits).toEqual({ id: 2, item: 'banana' });
     }));
 
   it('rejects with an error if fruit cannot be found by ID', () =>
-    api.get('/fruit/42').catch((error) => {
+    api.get('/fruit/42').catch(error => {
       expect(error.message).toEqual('404 Not Found');
     }));
 });

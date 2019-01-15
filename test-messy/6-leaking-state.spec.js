@@ -1,3 +1,4 @@
+/* eslint-disable */
 const PersonManager = require('../src/PersonManager-v2');
 const Person = require('../src/Person-v2');
 
@@ -19,7 +20,7 @@ const Person = require('../src/Person-v2');
  * false if not provided.
  * @returns {PersonManager} The PersonManager instance.
  */
-const setupPersonManager = (personConfigs) => {
+const setupPersonManager = personConfigs => {
   const defaultPersonConfig = {
     name: '',
     age: 0,
@@ -28,7 +29,7 @@ const setupPersonManager = (personConfigs) => {
     atWork: false,
   };
 
-  const persons = personConfigs.map((personConfig) => {
+  const persons = personConfigs.map(personConfig => {
     const configToApply = { ...defaultPersonConfig, ...personConfig };
     const person = new Person();
 
