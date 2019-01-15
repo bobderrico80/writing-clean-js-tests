@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The complicatedLegacyModule doAnotherComplicatedTask() function works as expected 1`] = `
+Object {
+  "output": "another complicated task output for input bar",
+}
+`;
+
+exports[`The complicatedLegacyModule doComplicatedTask() function works as expected 1`] = `
+Object {
+  "output": "complicated task output for input foo",
+}
+`;
