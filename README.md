@@ -6,12 +6,12 @@ The common mistakes (and their solutions) illustrated here are:
 
 1. Duplicating test setup code
 2. Not properly grouping tests
-3. Unclear test descriptions
-4. Repeating complicated setup steps
-5. Hiding test data
-6. Not using dynamic tests
-7. Leaking state between tests
-8. Writing confusing (or broken) async tests
+3. Repeating complicated setup steps
+4. Hiding test data
+5. Not using dynamic tests
+6. Leaking state between tests
+7. Writing confusing (or broken) async tests
+8. Unclear test descriptions
 9. Neglecting tests
 10. Not writing tests
 
